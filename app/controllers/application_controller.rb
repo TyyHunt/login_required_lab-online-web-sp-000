@@ -5,9 +5,7 @@ class ApplicationController < ActionController::Base
 
   def current_user
     if !!session[:name]
-      user.name
-    else
-      nil
+      session[:name]
     end
   end
 end
